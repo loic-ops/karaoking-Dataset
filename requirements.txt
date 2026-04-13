@@ -1,0 +1,5 @@
+yt-dlp>=2024.1.0
+requests>=2.31.0
+PyMySQL>=1.1.0
+SQLAlchemy>=2.0.23
+cryptography>=41.0.0

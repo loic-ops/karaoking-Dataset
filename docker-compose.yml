@@ -1,0 +1,34 @@
+services:
+  # Collector - parcourt Spotify/Deezer/MusicBrainz puis telecharge via yt-dlp
+  collector:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dataset_collector
+    volumes:
+      - uploads_data:/app/static/uploads
+      - ./artists.json:/app/artists.json:ro
+      - ./logs:/app/logs
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_PORT=3306
+      - MYSQL_USER=${MYSQL_USER:-karaoke}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-karaoke_password}
+      - MYSQL_DATABASE=${MYSQL_DATABASE:-karaoke_db}
+      - SONGS_PER_ARTIST=50
+      # Spotify API (gratuit — https://developer.spotify.com/dashboard)
+      - SPOTIFY_CLIENT_ID=${SPOTIFY_CLIENT_ID:-}
+      - SPOTIFY_CLIENT_SECRET=${SPOTIFY_CLIENT_SECRET:-}
+      # Deezer — pas d'auth requise
+      # MusicBrainz — pas d'auth requise
+    restart: "no"
+
+volumes:
+  uploads_data:
+    external: true
+    name: karaoke_app_uploads_data
+
+networks:
+  default:
+    external: true
+    name: karaoke_network
