@@ -1,105 +1,75 @@
 {
-  "togo": [
-    "Toofan", "King Mensah", "Santrinos Raphaël", "Joachin Migos", "Sethlo",
-    "Master Pabs", "Elom 20ce", "Almok", "Ano Neko", "Afi Kekeli",
-    "Amen Jah Cisse", "Pyroman", "Big Boss", "Kezita", "Tkay",
-    "Black T", "KS Bloom", "Vano Baby", "Blaaz", "Poto"
+  "france": [
+    "Stromae", "Aya Nakamura", "Angèle", "Damso", "Ninho",
+    "Jul", "PLK", "Nekfeu", "Orelsan", "Booba",
+    "PNL", "SCH", "Gims", "Dadju", "Tayc",
+    "Niska", "Gazo", "Tiakola", "Werenoi", "SDM",
+    "Edith Piaf", "Charles Aznavour", "Jacques Brel", "France Gall", "Serge Gainsbourg",
+    "Céline Dion", "Johnny Hallyday", "Jean-Jacques Goldman", "Francis Cabrel", "Renaud",
+    "Zaz", "Indila", "Louane", "Amir", "Vianney",
+    "Soprano", "Black M", "Maître Gims", "Lomepal", "Hamza",
+    "Djadja & Dinaz", "Naps", "Soolking", "Rim'K", "L'Algérino",
+    "Christine and the Queens", "Pomme", "Clara Luciani", "Julien Doré", "M. Pokora"
   ],
-  "cote_ivoire": [
-    "DJ Arafat", "Serge Beynaud", "Magic System", "Alpha Blondy",
-    "Tiken Jah Fakoly", "Josey", "Himra", "Didi B", "Suspect 95",
-    "Ariel Sheney", "Shado Chris", "Kerozen", "Roseline Layo",
-    "Meiway", "Gadji Celi", "Debordo Leekunfa", "Yodé et Siro",
-    "Aïcha Koné", "Espoir 2000", "Kedjevara", "Safarel Obiang",
-    "Nash", "Fior de Bior", "Ordinateur", "Shan'L", "BB Raina",
-    "Elow'n", "Bebi Philip", "Revolution", "Imilo Lechanceux",
-    "Bamba Ami Sarah", "Mix Premier", "Claire Bahi", "Le Molare",
-    "Dobet Gnahoré", "Molière", "Ramba Junior", "Team Paiya",
-    "Monique Séka", "Woya", "Daouda", "Lil Blacky", "Sydouce"
+  "usa": [
+    "Drake", "The Weeknd", "Beyoncé", "Taylor Swift", "Ed Sheeran",
+    "Billie Eilish", "Ariana Grande", "Post Malone", "Dua Lipa", "Bruno Mars",
+    "Eminem", "Kendrick Lamar", "Travis Scott", "Doja Cat", "SZA",
+    "Olivia Rodrigo", "Harry Styles", "Justin Bieber", "Rihanna", "Lady Gaga",
+    "Michael Jackson", "Whitney Houston", "Mariah Carey", "Stevie Wonder", "Frank Sinatra",
+    "Elvis Presley", "Adele", "Sam Smith", "Khalid", "Lana Del Rey",
+    "Imagine Dragons", "Coldplay", "Maroon 5", "OneRepublic", "The Chainsmokers",
+    "21 Savage", "Future", "Lil Baby", "Metro Boomin", "Tyler The Creator",
+    "Juice WRLD", "XXXTentacion", "Mac Miller", "J. Cole", "Kanye West",
+    "Chris Brown", "Usher", "Alicia Keys", "John Legend", "Charlie Puth"
   ],
-  "nigeria": [
-    "Burna Boy", "Wizkid", "Davido", "Asake", "Rema", "Tems",
-    "Fireboy DML", "Omah Lay", "Ckay", "Ayra Starr", "Olamide",
-    "Phyno", "Flavour", "Yemi Alade", "Mr Eazi", "Tekno",
-    "Patoranking", "Kizz Daniel", "Oxlade", "Bnxn", "Wande Coal",
-    "2Baba", "D'banj", "Timaya", "Simi", "Niniola", "Zinoleesky",
-    "Naira Marley", "Portable", "Seun Kuti", "Fela Kuti",
-    "Tiwa Savage", "Joeboy", "Chike", "Lojay", "Ruger", "Magixx",
-    "Crayon", "Victony", "Blaqbonez", "Skiibii", "Peruzzi",
-    "Mayorkun", "Teni", "Adekunle Gold", "Bella Shmurda", "Mohbad",
-    "Spyro", "Olakira"
+  "uk": [
+    "Ed Sheeran", "Adele", "Sam Smith", "Dua Lipa", "Harry Styles",
+    "Lewis Capaldi", "Rag'n'Bone Man", "Elton John", "Freddie Mercury", "David Bowie",
+    "The Beatles", "Amy Winehouse", "Robbie Williams", "George Michael", "Phil Collins",
+    "Stormzy", "Dave", "Central Cee", "Skepta", "AJ Tracey",
+    "Little Mix", "One Direction", "Spice Girls", "Tom Jones", "Rod Stewart"
   ],
-  "ghana": [
-    "Sarkodie", "Stonebwoy", "Shatta Wale", "R2Bees", "King Promise",
-    "Kuami Eugene", "Kwesi Arthur", "Amaarae", "Black Sherif",
-    "Ofori Amponsah", "Daddy Lumba", "Kojo Antwi", "Samini", "KiDi",
-    "Medikal", "Kofi Kinaata", "Gyakie", "Camidoh", "Mr Drew",
-    "Wendy Shay", "Efya", "Becca", "Fameye", "Akwaboah",
-    "Obrafour", "Okyeame Kwame", "Reggie Rockstone", "Joe Mettle",
-    "Diana Hamilton"
+  "latin": [
+    "Bad Bunny", "J Balvin", "Daddy Yankee", "Ozuna", "Shakira",
+    "Maluma", "Rauw Alejandro", "Karol G", "Anuel AA", "Becky G",
+    "Luis Fonsi", "Enrique Iglesias", "Ricky Martin", "Romeo Santos", "Aventura",
+    "Rosalía", "Peso Pluma", "Feid", "Myke Towers", "Nicky Jam",
+    "Marc Anthony", "Juan Luis Guerra", "Carlos Vives", "Juanes", "Sebastián Yatra"
   ],
-  "benin": [
-    "Angélique Kidjo", "Sessimè", "Fanicko", "Nikanor", "Togbe Yeton",
-    "Vano Baby", "Nel Oliver", "Don Métok", "Sèdjro", "Zeynab",
-    "Sagbohan Danialou", "Dibi Dobo", "Cotonou City Crew",
-    "Polytechnicien", "Nattty", "Tonymix"
+  "canada": [
+    "Drake", "The Weeknd", "Justin Bieber", "Céline Dion", "Shawn Mendes",
+    "Alanis Morissette", "Bryan Adams", "Michael Bublé", "Alessia Cara", "Tory Lanez",
+    "NAV", "PartyNextDoor", "Daniel Caesar", "Charlotte Cardin", "Coeur de Pirate"
   ],
-  "senegal": [
-    "Youssou N'Dour", "Wally Seck", "Viviane Chidid", "Akon",
-    "Baaba Maal", "Ismaël Lô", "Dip Doundou Guiss", "Duggy Tee",
-    "Coumba Gawlo", "Daara J Family", "Pape Diouf", "Thione Seck",
-    "Baye Babou", "Omzo Dollar", "Ngaka Blindé", "Nix"
+  "italie": [
+    "Måneskin", "Laura Pausini", "Eros Ramazzotti", "Andrea Bocelli", "Toto Cutugno",
+    "Adriano Celentano", "Zucchero", "Nek", "Gianna Nannini", "Mahmood",
+    "Blanco", "Ghali", "Sfera Ebbasta", "Fedez", "Annalisa"
   ],
-  "rdc": [
-    "Fally Ipupa", "Koffi Olomidé", "Papa Wemba", "Ferre Gola",
-    "Innoss'B", "Werrason", "JB Mpiana", "Fabregas",
-    "Héritier Watanabe", "Gaz Mawete", "Tshala Muana", "Mbilia Bel",
-    "Tabu Ley Rochereau", "Franco Luambo", "Madilu System",
-    "Reddy Amisi", "Robinio Mundibu", "Naza", "Tayc", "Dadju",
-    "Damso", "Gims", "Extra Musica", "Roga Roga", "Syndika"
+  "espagne": [
+    "Rosalía", "Enrique Iglesias", "Alejandro Sanz", "Julio Iglesias", "David Bisbal",
+    "Pablo Alborán", "Aitana", "C. Tangana", "Quevedo", "Rauw Alejandro",
+    "Bad Gyal", "Omar Montes", "Nathy Peluso", "Beret", "Manuel Turizo"
   ],
-  "cameroun": [
-    "Petit Pays", "Richard Bona", "Manu Dibango", "Charlotte Dipanda",
-    "Locko", "X-Maleya", "Stanley Enow", "Daphné", "Mr Leo",
-    "Salatiel", "Tenor", "Ko-C", "Libianca", "André Marie Tala",
-    "Ben Decca", "Lady Ponce", "Longué Longué", "Blick Bassy",
-    "Magasco", "Numerica", "Duc-Z", "Mink's"
+  "allemagne": [
+    "Rammstein", "Nena", "Tokio Hotel", "Scorpions", "Kraftwerk",
+    "Apache 207", "Capital Bra", "Cro", "Mark Forster", "LEA"
   ],
-  "mali": [
-    "Salif Keita", "Amadou et Mariam", "Oumou Sangaré",
-    "Sidiki Diabaté", "Toumani Diabaté", "Ali Farka Touré",
-    "Master Soumy", "Tal B", "Iba One", "Gaspi", "Rokia Traoré",
-    "Mylmo"
+  "portugal_bresil": [
+    "Anitta", "Ludmilla", "MC Kevinho", "Gusttavo Lima", "Marília Mendonça",
+    "Jorge & Mateus", "Henrique & Juliano", "Ivete Sangalo", "Caetano Veloso", "Seu Jorge",
+    "Amália Rodrigues", "Salvador Sobral", "Ana Moura", "Mariza", "Buraka Som Sistema"
   ],
-  "burkina_faso": [
-    "Smarty", "Floby", "Sana Bob", "Greg Yan", "Dez Altino",
-    "Hamed Smani", "Zongo Ambassador", "Freeman"
+  "kpop_jpop": [
+    "BTS", "BLACKPINK", "Stray Kids", "TWICE", "EXO",
+    "NewJeans", "aespa", "SEVENTEEN", "IVE", "LE SSERAFIM",
+    "ONE OK ROCK", "YOASOBI", "Kenshi Yonezu", "LiSA", "Ado"
   ],
-  "guinee": [
-    "Mory Kanté", "Sékouba Bambino", "Instinct Killers",
-    "Djely Kani", "Petit Bobo", "Takana Zion"
-  ],
-  "afrique_du_sud": [
-    "Tyla", "Black Coffee", "Nasty C", "Cassper Nyovest", "AKA",
-    "Master KG", "Makhadzi", "DJ Maphorisa", "Kabza De Small",
-    "Ami Faku", "Brenda Fassie", "Miriam Makeba", "Hugh Masekela",
-    "Zakes Bantwini", "Ladysmith Black Mambazo"
-  ],
-  "tanzanie": [
-    "Diamond Platnumz", "Ali Kiba", "Harmonize", "Zuchu",
-    "Rayvanny", "Nandy", "Mbosso"
-  ],
-  "kenya": [
-    "Sauti Sol", "Nyashinski", "Otile Brown", "Khaligraph Jones",
-    "Willy Paul", "Bahati"
-  ],
-  "angola": [
-    "Anselmo Ralph", "C4 Pedro", "Nelson Freitas", "Matias Damásio",
-    "Yola Semedo"
-  ],
-  "maghreb": [
-    "Khaled", "Cheb Mami", "Soolking", "Rim'K", "L'Algérino",
-    "Saad Lamjarred", "Fnaire", "Elgrandetoto", "Balti",
-    "Cheb Hasni", "Reda Taliani"
+  "pop_mondiale": [
+    "ABBA", "ACDC", "Queen", "U2", "Depeche Mode",
+    "Linkin Park", "Green Day", "Nirvana", "Red Hot Chili Peppers", "Metallica",
+    "Sia", "Pink", "Katy Perry", "Miley Cyrus", "Selena Gomez",
+    "Cardi B", "Nicki Minaj", "Megan Thee Stallion", "Lizzo", "Demi Lovato"
   ]
 }
