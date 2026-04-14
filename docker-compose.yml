@@ -7,6 +7,7 @@ services:
     container_name: dataset_collector
     volumes:
       - uploads_data:/app/static/uploads
+      - processed_data:/app/static/processed
       - ./artists.json:/app/artists.json:ro
       - ./logs:/app/logs
     environment:
@@ -27,6 +28,9 @@ volumes:
   uploads_data:
     external: true
     name: karaoke_app_uploads_data
+  processed_data:
+    external: true
+    name: karaoke_app_processed_data
 
 networks:
   default:

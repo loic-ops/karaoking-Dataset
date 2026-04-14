@@ -19,6 +19,7 @@ import uuid
 from pathlib import Path
 
 import pymysql
+import requests
 from sqlalchemy import create_engine, text
 
 from platforms import ALL_PLATFORMS
@@ -34,6 +35,7 @@ MYSQL_PASSWORD = os.getenv("MYSQL_PASSWORD", "karaoke_password")
 MYSQL_DATABASE = os.getenv("MYSQL_DATABASE", "karaoke_db")
 SONGS_PER_ARTIST = int(os.getenv("SONGS_PER_ARTIST", "50"))
 UPLOADS_DIR = Path(os.getenv("UPLOADS_DIR", "/app/static/uploads"))
+PROCESSED_DIR = Path(os.getenv("PROCESSED_DIR", "/app/static/processed"))
 ARTISTS_FILE = Path(os.getenv("ARTISTS_FILE", "/app/artists.json"))
 
 # --- Logging ---
@@ -230,6 +232,28 @@ def process_track(engine, track: TrackInfo, artist_id: int, country: str) -> boo
 
     # Insérer en base
     song_id = str(uuid.uuid4())
+
+    # Créer le dossier processed/{song_id}/ pour cover + lyrics
+    song_dir = PROCESSED_DIR / song_id
+    song_dir.mkdir(parents=True, exist_ok=True)
+
+    # Télécharger la cover (thumbnail)
+    cover_saved = ""
+    if track.cover_url:
+        cover_saved = _download_cover(track.cover_url, song_dir)
+    if not cover_saved:
+        # Fallback: thumbnail YouTube
+        yt_thumb = f"https://img.youtube.com/vi/{yt_id}/hqdefault.jpg"
+        cover_saved = _download_cover(yt_thumb, song_dir)
+    if cover_saved:
+        log.info("    [img] cover sauvegardée")
+
+    # Écrire les lyrics en fichier LRC
+    if lyrics:
+        lrc_path = song_dir / "lyrics.lrc"
+        lrc_path.write_text(lyrics, encoding="utf-8")
+        log.info("    [lrc] paroles sauvegardées")
+
     insert_song(
         engine,
         song_id=song_id,
@@ -241,11 +265,24 @@ def process_track(engine, track: TrackInfo, artist_id: int, country: str) -> boo
         lyrics=lyrics,
         language=track.language,
         album=track.album,
-        cover_path=track.cover_url,
+        cover_path=cover_saved,
         country=country,
     )
     log.info("    [ok] '%s' ajouté (%ds)", track.title, duration or track.duration_sec)
     return True
+
+
+def _download_cover(url: str, song_dir: Path) -> str:
+    """Télécharge une image de cover et la sauvegarde en cover.jpg."""
+    try:
+        resp = requests.get(url, timeout=10)
+        resp.raise_for_status()
+        cover_path = song_dir / "cover.jpg"
+        cover_path.write_bytes(resp.content)
+        return str(cover_path)
+    except Exception as e:
+        log.debug("    Cover download échoué (%s): %s", url[:60], e)
+        return ""
 
 
 def collect(engine):
